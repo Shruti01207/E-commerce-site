@@ -1,0 +1,118 @@
+{
+  "seller": [
+    {
+      "name": "shruti",
+      "email": "guptashruti232@gmail.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "Sam",
+      "email": "Sam@gmsil.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "menakshi",
+      "email": "rathore@gmail.com",
+      "password": "abc@123",
+      "id": 3
+    },
+    {
+      "name": "rossy",
+      "email": "rossy@gmail.com",
+      "password": "abc@123",
+      "id": 4
+    },
+    {
+      "name": "Mahi",
+      "email": "shruti1234@gmail.com",
+      "password": "abc@123",
+      "id": 5
+    },
+    {
+      "name": "doggie",
+      "email": "don@gmail.com",
+      "password": "abc@123",
+      "id": 6
+    },
+    {
+      "name": "doggie",
+      "email": "don@gmail.com",
+      "password": "abc@123",
+      "id": 7
+    },
+    {
+      "name": "laxmi",
+      "email": "laxmi@gmail.com",
+      "password": "abc@123",
+      "id": 8
+    },
+    {
+      "name": "Shruti",
+      "email": "admin@gmail.com",
+      "password": "abc@123",
+      "id": 9
+    },
+    {
+      "name": "Astha",
+      "email": "gupta@gmail.com",
+      "password": "abc@123",
+      "id": 10
+    },
+    {
+      "email": "shruti1234@gmail.com",
+      "password": "dd",
+      "id": 11
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "abcssd",
+      "id": 12
+    },
+    {
+      "name": "Shruti",
+      "email": "shruti123@gmail.com",
+      "password": "455654",
+      "id": 13
+    }
+  ],
+  "products": [
+    {
+      "productName": "Apple iPhone 14 Pro (1 TB)  Gold",
+      "productPrice": "145990",
+      "productColor": "Gold",
+      "productCategory": "Mobile Phone",
+      "productDescription": "iOS,5G",
+      "productImage": "https://m.media-amazon.com/images/I/61nzPMNY8zL._SX679_.jpg",
+      "id": 1
+    },
+    {
+      "productName": "Apple iPhone 15 (128 GB) ",
+      "productPrice": "79900",
+      "productColor": "Pink",
+      "productCategory": "Mobile Phone",
+      "productDescription": "5G,iOS",
+      "productImage": "https://m.media-amazon.com/images/I/71v2jVh6nIL._AC_UY218_.jpg",
+      "id": 2
+    },
+    {
+      "productName": "Apple iPhone 13 (128GB)",
+      "productPrice": "55999",
+      "productColor": "StarLight",
+      "productCategory": "Mobile Phone",
+      "productDescription": "iOS,5G",
+      "productImage": "https://m.media-amazon.com/images/I/71GLMJ7TQiL._AC_UY218_.jpg",
+      "id": 3
+    },
+    {
+      "productName": "Apple iPhone 14 Pro Max (256 GB)",
+      "productPrice": "137999",
+      "productColor": "Gold",
+      "productCategory": "Mobile Phone",
+      "productDescription": "iOS,5G",
+      "productImage": "https://m.media-amazon.com/images/I/71T5NVOgbpL._AC_UY218_.jpg",
+      "id": 4
+    }
+  ]
+}

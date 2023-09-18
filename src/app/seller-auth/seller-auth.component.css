@@ -1,0 +1,20 @@
+.form-container{
+
+
+    margin-top:5.5em !important;
+    
+}
+
+.card{
+
+    border:1px solid blue;
+
+}
+
+.navigationLink{
+
+    cursor: pointer;
+    text-decoration:none;
+    color:blue;
+
+}

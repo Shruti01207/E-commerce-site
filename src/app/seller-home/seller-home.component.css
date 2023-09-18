@@ -1,0 +1,13 @@
+.card-img-top{
+
+    /* object-fit: cover !important; */
+    /* object-position: center center !important; */
+    
+    max-height:200px;
+    border:2px solid red;
+}
+
+.card{
+
+    flex-direction: row !important;
+}

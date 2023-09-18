@@ -1,0 +1,59 @@
+<div
+    class="p-2 m-0 form-container container row d-flex justify-content-center align-items-center"
+    *ngIf="!accountExist">
+    <form
+        class="container col-12 col-md-10 col-lg-5 d-flex flex-column justify-content-center align-items-center py-5 card"
+        #sellerSignUp="ngForm" (ngSubmit)="submitSignUpData(sellerSignUp.value)">
+
+        <div class="col-12 mb-3">
+            <h4 class="text-center text-primary">Seller-Signup</h4>
+        </div>
+        <div class="col-12 mb-3">
+            <input type="text" name="name" placeholder="Enter Name"
+                id="user-name"
+                class="form-control" ngModel>
+        </div>
+        <div class="col-12 mb-3">
+            <input type="email" name="email" placeholder="Enter Email"
+                id="user-mail"
+                class="form-control" ngModel></div>
+        <div class="col-12 mb-5">
+            <input type="password" name="password" placeholder="Enter Password"
+                id="user-password" class="form-control" ngModel>
+        </div>
+        <div class="col-12 mb-3 input-container">
+            <button
+                class="btn btn-outline-primary w-100">Submit</button>
+        </div>
+        <a class="text-center" (click)="accountExist=true" class="navigationLink" >Already have an
+            account? Click to Login</a>
+    </form>
+</div>
+
+<div
+    class="p-2 m-0 form-container container row d-flex justify-content-center align-items-center"
+    *ngIf="accountExist">
+    <form
+        class="container col-12 col-md-10 col-lg-5 d-flex flex-column justify-content-center align-items-center py-5 card"
+        #sellerLogin="ngForm" (ngSubmit)=" submitLogInData(sellerLogin.value)">
+
+        <div class="col-12 mb-3">
+            <h4 class="text-center text-primary">Seller-Login</h4>
+        </div>
+        <div class="col-12 mb-3">
+            <input type="email" name="email" placeholder="Enter Email"
+                id="user-mail"
+                class="form-control" ngModel></div>
+        <div class="col-12 mb-5">
+            <input type="password" name="password" placeholder="Enter Password"
+                id="user-password" class="form-control" ngModel>
+        </div>
+        <div class="col-12 mb-3 input-container">
+            <button
+                class="btn btn-outline-primary w-100">Login</button>
+        </div>
+        <div class="col-12 text-center text-danger mb-1 fw-bold">{{authStatusMessage}}</div>
+        <a class="text-center navigationLink" (click)="accountExist=false">Don't have an
+            account? Click to Signup</a>
+    </form>
+</div>
