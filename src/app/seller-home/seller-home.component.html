@@ -2,26 +2,31 @@
 <div class="container-fluid">
     <div *ngFor=" let product of productList">
         <div
-        class="product-card border d-flex flex-column flex-md-row flex-lg-row mt-4">
-        <div class="product-image-container border d-flex justify-content-center align-item-center">
-            <img
-               src="{{product.productImage}}"
-                alt class="product-image">
-        </div>
-        <div class="product-data">
-            <h4 class="product-title">{{product.productName}}-<span
-                    class="product-color">{{product.productColor}}</span></h4>
-            <span *ngFor="let i of [1,2,3]">
-                <i class="fa fa-star" aria-hidden="true" style="color:goldenrod"></i>
-            </span>
-            <h3 class="product-price"> {{ +(product.productPrice.replace(',',''))  | currency: 'INR':'symbol':'2.2-2'}}</h3>
-            <h6 class="description-title text-secondary">Description</h6>
-            <ul>
-                <li>Operating System: iOS</li>
-                <li>Cellular Technology: 5G</li>
-            </ul>
+            class="product-card border d-flex flex-column flex-md-row flex-lg-row mt-4">
+            <div
+                class="product-image-container border d-flex justify-content-center align-item-center">
+                <img
+                    src="{{product.productImage}}"
+                    alt class="product-image">
+            </div>
+            <div class="product-data">
+                <h4 class="product-title">{{product.productName}}-<span
+                        class="product-color">{{product.productColor}}</span></h4>
+                <span *ngFor="let i of [1,2,3]">
+                    <i class="fa fa-star" aria-hidden="true"
+                        style="color:goldenrod"></i>
+                </span>
+                <h3 class="product-price"> {{ +(product.productPrice.replace(',',''))
+                    | currency: 'INR':'symbol':'2.2-2'}}</h3>
+                <h6 class="description-title text-secondary">Description</h6>
+                <ul>
+                    <li>Operating System: iOS</li>
+                    <li>Cellular Technology: 5G</li>
+                </ul>
+                <button class="btn btn-danger" (click)="deleteProduct(product.id)">Delete Product</button>
+                <button class="btn btn-primary" routerLink="/seller-update-product/{{product.id}}">Update Product</button>
+            </div>
         </div>
     </div>
-    </div>
-   
+
 </div>

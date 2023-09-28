@@ -11,16 +11,31 @@ export class ProductService {
 
   constructor() { }
 
-  addProduct(product:productDetails){
+  addProduct(product: productDetails) {
     console.log(product);
-    return this.http.post('http://localhost:3000/products',product);
+    return this.http.post('http://localhost:3000/products', product);
   }
 
-
-
-  getProducts( ){
+  getProducts() {
     console.log("get products");
-    return this.http.get<productDetails[ ]>('http://localhost:3000/products');
+    return this.http.get<productDetails[]>('http://localhost:3000/products');
   }
+
+
+  deleteProduct(productId: number) {
+    return this.http.delete(`http://localhost:3000/products/${productId}`);
+  }
+
+
+  getProduct(productId: string) {
+    return this.http.get<productDetails>(`http://localhost:3000/products/${productId}`);
+  }
+
+  updateProduct(updatedProduct:productDetails){
+    console.log("upp",updatedProduct);
+    return this.http.put(`http://localhost:3000/products/${updatedProduct.id}`,updatedProduct);
+  }
+
+
 
 }

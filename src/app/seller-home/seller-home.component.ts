@@ -19,8 +19,10 @@ export class SellerHomeComponent implements OnInit {
    });
   }
 
-  
-
+  deleteProduct(productId:number )
+  {
+   console.log("productId",productId);
+  }
   
 
 }

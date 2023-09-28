@@ -1,0 +1,50 @@
+
+<div
+    class="p-2 m-0 form-container container row d-flex justify-content-center align-items-center">
+    <form
+        class="container col-12 col-md-10 col-lg-5 d-flex flex-column justify-content-center align-items-center card mt-3"
+        #updateProductForm="ngForm"  (ngSubmit)="editProduct(updateProductForm.value)">
+
+        <div class="col-12 mb-3">
+            <h4 class="text-center text-primary">Update-Product</h4>
+        </div>
+        <div class="col-12 mb-3">
+            <input type="text" name="productName"
+                placeholder="Enter Product Name"
+                class="form-control" ngModel="{{productData?.productName}}">
+        </div>
+        <div class="col-12 mb-3">
+            <input type="text" name="productPrice"
+                placeholder="Enter Product Price"
+                class="form-control" ngModel="{{productData?.productPrice}}">
+        </div>
+        
+        <div class="col-12 mb-3">
+            <input type="text" name="productColor"
+                placeholder="Enter Product Color"
+                id="user-name"
+                class="form-control" ngModel="{{productData?.productColor}}">
+        </div>
+        <div class="col-12 mb-3">
+            <input type="text" name="productCategory"
+                placeholder="Enter Product Category"
+                class="form-control" ngModel="{{productData?.productCategory}}">
+        </div>
+        <div class="col-12 row mb-3">
+            <textarea name="productDescription" id
+                placeholder="Enter Product Description"
+                ngModel="{{productData?.productDescription}}" class="col-12 form-control"></textarea>
+        </div>
+        <div class="col-12 mb-5">
+            <input type="text" name="productImage"
+                placeholder="Enter Image Url"
+                class="form-control" ngModel="{{productData?.productImage}}">
+        </div>
+        <div class="col-12 mb-3 input-container">
+            <button
+                class="btn btn-outline-primary w-100">Update Product</button>
+        </div>
+    
+    </form>
+</div>
+

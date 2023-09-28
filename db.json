@@ -97,22 +97,13 @@
       "id": 2
     },
     {
-      "productName": "Apple iPhone 13 (128GB)",
-      "productPrice": "55999",
+      "productName": "Apple iPhone 13 (130GB)",
+      "productPrice": "65999",
       "productColor": "StarLight",
       "productCategory": "Mobile Phone",
-      "productDescription": "iOS,5G",
+      "productDescription": "iOS,6G",
       "productImage": "https://m.media-amazon.com/images/I/71GLMJ7TQiL._AC_UY218_.jpg",
       "id": 3
-    },
-    {
-      "productName": "Apple iPhone 14 Pro Max (256 GB)",
-      "productPrice": "137999",
-      "productColor": "Gold",
-      "productCategory": "Mobile Phone",
-      "productDescription": "iOS,5G",
-      "productImage": "https://m.media-amazon.com/images/I/71T5NVOgbpL._AC_UY218_.jpg",
-      "id": 4
     }
   ]
 }

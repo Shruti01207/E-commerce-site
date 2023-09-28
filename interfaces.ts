@@ -11,6 +11,7 @@ export interface loginCredentials {
 }
 
 export interface productDetails {
+    id:number;
     productName: string;
     productPrice: string;
     productColor: string;
