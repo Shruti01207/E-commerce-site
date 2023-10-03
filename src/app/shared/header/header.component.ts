@@ -7,33 +7,40 @@ import { SellerService } from 'src/app/services/seller.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  
-  menuType:String='default';
-  sellerName:any='Shruti';
-  ngOnInit(): void {
-    this.route.events.subscribe((data:any)=>{
-    
-      if(data.url){
-        console.log(data.url);
-        if(localStorage.getItem('seller') && data.url.includes('seller')){
-         this.sellerName=JSON.parse(localStorage.getItem('seller')||'seller').body[0].name;
-         console.log("seller print",this.sellerName);
-          this.menuType='seller-menu';
+
+  menuType: String = 'default';
+  sellerName: any = 'Shruti';
+  sellerCredentials: any;
+  async ngOnInit() {
+    await this.route.events.subscribe((data: any) => {
+      console.log("data.url.", data.routerEvent.url);
+      console.log("data", data);
+      if (data.routerEvent.url) {
+        if (localStorage.getItem('seller') && data.routerEvent.url.includes('seller')) {
+          this.sellerCredentials = JSON.parse(localStorage.getItem('seller') || 'seller')
+          // this.sellerName=JSON.parse(localStorage.getItem('seller')||'seller').body[0].name?.body[0].name;
+          if (this.sellerCredentials.body[0] === undefined) {
+            this.sellerName = this.sellerCredentials.body.name;
+          }
+          else {
+            this.sellerName = this.sellerCredentials.body[0].name;
+          }
+          this.menuType = 'seller-menu';
         }
-        else{
+        else {
           console.log('outside seller area');
-          this.menuType='default';
+          this.menuType = 'default';
           console.log(this.menuType);
-        }                                                    
+        }
       }
 
     })
   }
 
-  private route=inject(Router);
-  private seller=inject(SellerService);
-  sellerLogOut( ){
-    this.seller.sellerLogOut( );
+  private route = inject(Router);
+  private seller = inject(SellerService);
+  sellerLogOut() {
+    this.seller.sellerLogOut();
     alert("You have been logout successfully!");
   }
 

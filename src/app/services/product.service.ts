@@ -32,10 +32,13 @@ export class ProductService {
   }
 
   updateProduct(updatedProduct:productDetails){
-    console.log("upp",updatedProduct);
+   
     return this.http.put(`http://localhost:3000/products/${updatedProduct.id}`,updatedProduct);
   }
 
-
+  getPopularProducts( ){
+    console.warn(this.http.get<productDetails[ ]>('http://localhost:3000/products?_limit=3'));
+   return this.http.get<productDetails[ ]>('http://localhost:3000/products?_limit=3');
+  }
 
 }

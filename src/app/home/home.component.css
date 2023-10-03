@@ -1,0 +1,13 @@
+.carousel-style{
+
+    height:500px;
+    object-fit: contain;
+    width:100%;
+}
+
+.carousel-caption,.carousel-control-prev-icon,.carousel-control-next-icon{
+
+ /* background-color:#0c62e857; */
+  background-color: #f800ffdb;
+}
+

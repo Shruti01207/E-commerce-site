@@ -75,35 +75,56 @@
       "email": "shruti123@gmail.com",
       "password": "455654",
       "id": 13
+    },
+    {
+      "name": "shruti",
+      "email": "shruti@gmail.com",
+      "password": "123",
+      "id": 14
+    },
+    {
+      "name": "astha",
+      "email": "astha@gmail.com",
+      "password": "123",
+      "id": 15
     }
   ],
   "products": [
     {
-      "productName": "Apple iPhone 14 Pro (1 TB)  Gold",
-      "productPrice": "145990",
-      "productColor": "Gold",
+      "productName": "Apple iPhone 14 (128 GB)",
+      "productPrice": "61999",
+      "productColor": "Blue",
       "productCategory": "Mobile Phone",
       "productDescription": "iOS,5G",
-      "productImage": "https://m.media-amazon.com/images/I/61nzPMNY8zL._SX679_.jpg",
+      "productImage": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg",
       "id": 1
     },
     {
-      "productName": "Apple iPhone 15 (128 GB) ",
-      "productPrice": "79900",
-      "productColor": "Pink",
+      "productName": "Apple iPhone 13",
+      "productPrice": "52499",
+      "productColor": "StarLight",
       "productCategory": "Mobile Phone",
-      "productDescription": "5G,iOS",
-      "productImage": "https://m.media-amazon.com/images/I/71v2jVh6nIL._AC_UY218_.jpg",
+      "productDescription": "iOS,5G",
+      "productImage": "https://m.media-amazon.com/images/I/314Rp+8XKWL._SX342_SY445_.jpg",
       "id": 2
     },
     {
-      "productName": "Apple iPhone 13 (130GB)",
-      "productPrice": "65999",
-      "productColor": "StarLight",
+      "productName": "Apple iPhone 13",
+      "productPrice": "50000",
+      "productColor": "Green",
       "productCategory": "Mobile Phone",
-      "productDescription": "iOS,6G",
-      "productImage": "https://m.media-amazon.com/images/I/71GLMJ7TQiL._AC_UY218_.jpg",
+      "productDescription": "iOS,5G",
+      "productImage": "https://m.media-amazon.com/images/I/315vs3rLEZL._SY445_SX342_QL70_FMwebp_.jpg",
       "id": 3
+    },
+    {
+      "productName": "Apple iPhone 15 Pro (1 TB)",
+      "productPrice": "1,84,900",
+      "productColor": "Blue Titanium",
+      "productCategory": "Mobile Phone",
+      "productDescription": "iOS,5G",
+      "productImage": "https://m.media-amazon.com/images/I/41me-QfWqRL._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 4
     }
   ]
 }

@@ -8,21 +8,34 @@ import { productDetails } from 'interfaces';
   styleUrls: ['./seller-home.component.css']
 })
 export class SellerHomeComponent implements OnInit {
-  
-  productList:productDetails[ ]=[ ];
+
+  productList: productDetails[] = [];
   private product = inject(ProductService);
 
   ngOnInit(): void {
-   this.product.getProducts( ).subscribe((result)=>{
-    console.log("products",result);
-    this.productList=result;
-   });
+    
+    this.getProductList( );
+
   }
 
-  deleteProduct(productId:number )
-  {
-   console.log("productId",productId);
+  deleteProduct(productId: number) {
+    console.log("productId", productId);
+    this.product.deleteProduct(productId).subscribe((result)=>{
+        console.warn(result,"delete successful");
+        this.getProductList( );
+    })
   }
+
+  getProductList(){
+
+    this.product.getProducts().subscribe((result) => {
+      console.log("products", result);
+      this.productList = result;
+    });
   
+  }
+
 
 }
+
+
