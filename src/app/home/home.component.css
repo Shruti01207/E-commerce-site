@@ -1,4 +1,4 @@
-.carousel-style{
+/* .carousel-style{
 
     height:500px;
     object-fit: contain;
@@ -7,7 +7,20 @@
 
 .carousel-caption,.carousel-control-prev-icon,.carousel-control-next-icon{
 
- /* background-color:#0c62e857; */
+  background-color:#0c62e857; 
   background-color: #f800ffdb;
+} */
+
+
+header{
+
+  background: url('../images/D51285990_WLA_Attach_JulyAcc_Mob_Hero_1242x450_2.jpg');
+  background-size: cover;
+  height:500px;
+  width:100%;
+  /* background: orange; */
 }
 
+.card-title{
+  color: #007185 !important;
+}

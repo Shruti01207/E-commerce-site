@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">E-COMM</a>
+        <a class="navbar-brand" routerLink="/ ">E-COMM</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -18,9 +18,7 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="seller-auth">Seller</a>
                 </li>
-                <li class="nav-item">
-
-                </li>
+               
                 <li class="nav-item">
                     <a class="nav-link" href="#">Cart(0)</a>
                 </li>
@@ -37,9 +35,9 @@
             </ul>
             <div *ngIf="menuType==='default'">
                 <form class="d-flex" role="search" *ngIf="menuType==='default'">
-                    <input class="form-control me-2" type="search"
+                    <input class="form-control me-2" (keyup)="searchProduct($event)" type="search"
                         placeholder="Search Product" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                 </form>
             </div>
             <div *ngIf="menuType==='seller-menu'" class="border border-danger d-flex">

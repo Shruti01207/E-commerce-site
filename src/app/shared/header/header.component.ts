@@ -1,5 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
 import { SellerService } from 'src/app/services/seller.service';
 @Component({
   selector: 'app-header',
@@ -39,11 +40,19 @@ export class HeaderComponent implements OnInit {
 
   private route = inject(Router);
   private seller = inject(SellerService);
+  private product=inject(ProductService);
   sellerLogOut() {
     this.seller.sellerLogOut();
     alert("You have been logout successfully!");
   }
 
-
+  searchProduct(e:KeyboardEvent){
+   
+   const element= e.target as  HTMLInputElement;
+   //console.log(element.value);
+   this.product.searchProducts(element.value).subscribe((result)=>{
+    console.log(result);
+   })
+  }
 
 }

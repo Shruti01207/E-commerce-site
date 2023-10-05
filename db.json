@@ -87,21 +87,18 @@
       "email": "astha@gmail.com",
       "password": "123",
       "id": 15
+    },
+    {
+      "name": "ani",
+      "email": "ani@gmail.com",
+      "password": "123",
+      "id": 16
     }
   ],
   "products": [
     {
-      "productName": "Apple iPhone 14 (128 GB)",
-      "productPrice": "61999",
-      "productColor": "Blue",
-      "productCategory": "Mobile Phone",
-      "productDescription": "iOS,5G",
-      "productImage": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg",
-      "id": 1
-    },
-    {
       "productName": "Apple iPhone 13",
-      "productPrice": "52499",
+      "productPrice": "1",
       "productColor": "StarLight",
       "productCategory": "Mobile Phone",
       "productDescription": "iOS,5G",
