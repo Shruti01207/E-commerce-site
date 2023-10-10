@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/ ">E-COMM</a>
+        <a class="navbar-brand" routerLink=" ">E-COMM</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -11,14 +11,14 @@
             [ngSwitch]="menuType">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"
                 *ngSwitchCase="'default'">
-                <li class="nav-item border border-danger">
+                <li class="nav-item">
                     <a class="nav-link active" aria-current="page"
                         routerLink=" ">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="seller-auth">Seller</a>
                 </li>
-               
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">Cart(0)</a>
                 </li>
@@ -30,19 +30,38 @@
                         routerLink="seller-home">Product List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="seller-add-product">Add Product</a>
+                    <a class="nav-link" routerLink="seller-add-product">Add
+                        Product</a>
                 </li>
             </ul>
             <div *ngIf="menuType==='default'">
-                <form class="d-flex" role="search" *ngIf="menuType==='default'">
-                    <input class="form-control me-2" (keyup)="searchProduct($event)" type="search"
-                        placeholder="Search Product" aria-label="Search">
-                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                <form class="d-flex" role="search" *ngIf="menuType==='default'"
+                    class="dropdown">
+                    <input class="form-control me-2 dropdown-toggle"
+                        (keyup)="searchProduct($event)" type="search"
+                        placeholder="Search Product" aria-label="Search"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                    <div class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton">
+                        <!-- write the logic for limiting the displayed search results -->
+                        <div *ngFor="let item of searchResults; let i=index">
+                            <a class="dropdown-item" href="#">{{item.productName}}</a>
+                        </div>
+                    </div>
                 </form>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item"
+                        href="#">Live courses
+                    </a>
+
+                    <a class="dropdown-item"
+                        href="#">Online courses
+                    </a>
+                </div>
             </div>
-            <div *ngIf="menuType==='seller-menu'" class="border border-danger d-flex">
-                <a class="nav-link me-4" (click)="sellerLogOut( )">Logout</a>
+            <div *ngIf="menuType==='seller-menu'" class="d-flex flex-column">
                 <span>Hi, {{sellerName|titlecase}}!</span>
+                <a class="nav-link me-4 fw-bold cursor-pointer text-light" (click)="sellerLogOut( )">Logout</a>
             </div>
 
         </div>

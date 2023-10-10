@@ -13,26 +13,22 @@ export class SellerHomeComponent implements OnInit {
   private product = inject(ProductService);
 
   ngOnInit(): void {
-    
-    this.getProductList( );
-
+    this.getProductList();
   }
 
   deleteProduct(productId: number) {
-    console.log("productId", productId);
-    this.product.deleteProduct(productId).subscribe((result)=>{
-        console.warn(result,"delete successful");
-        this.getProductList( );
+    //console.log("productId", productId);
+    this.product.deleteProduct(productId).subscribe((result) => {
+      this.getProductList();
     })
+
   }
 
-  getProductList(){
-
-    this.product.getProducts().subscribe((result) => {
-      console.log("products", result);
+  getProductList() {
+      this.product.getProducts().subscribe((result) => {
       this.productList = result;
     });
-  
+
   }
 
 

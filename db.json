@@ -98,7 +98,7 @@
   "products": [
     {
       "productName": "Apple iPhone 13",
-      "productPrice": "1",
+      "productPrice": "50000",
       "productColor": "StarLight",
       "productCategory": "Mobile Phone",
       "productDescription": "iOS,5G",
@@ -106,22 +106,58 @@
       "id": 2
     },
     {
-      "productName": "Apple iPhone 13",
-      "productPrice": "50000",
-      "productColor": "Green",
-      "productCategory": "Mobile Phone",
-      "productDescription": "iOS,5G",
-      "productImage": "https://m.media-amazon.com/images/I/315vs3rLEZL._SY445_SX342_QL70_FMwebp_.jpg",
-      "id": 3
-    },
-    {
       "productName": "Apple iPhone 15 Pro (1 TB)",
-      "productPrice": "1,84,900",
+      "productPrice": "184900",
       "productColor": "Blue Titanium",
       "productCategory": "Mobile Phone",
       "productDescription": "iOS,5G",
       "productImage": "https://m.media-amazon.com/images/I/41me-QfWqRL._SX300_SY300_QL70_FMwebp_.jpg",
       "id": 4
+    },
+    {
+      "productName": "Airdopes 131",
+      "productPrice": "849",
+      "productColor": "Steel Blue",
+      "productCategory": "Earbuds",
+      "productDescription": "Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers, IWP Technology, 650mAh Charging Case",
+      "productImage": "https://www.boat-lifestyle.com/cdn/shop/products/616b4ead-bbd9-4a16-aeab-8d331a16f697_600x.png?v=1642405569",
+      "id": 5
+    },
+    {
+      "productName": "boAt Airdopes 170 ",
+      "productPrice": "1099",
+      "productColor": "Classic Black",
+      "productCategory": "Earbuds",
+      "productDescription": "TWS Earbuds with 50H Playtime, Quad Mics ENx™ Tech, Low Latency Mode, 13mm Drivers, ASAP™ Charge, IPX4, IWP™, Touch Controls & BT v5.3",
+      "productImage": "https://m.media-amazon.com/images/I/51YOeZehIKL._SY450_.jpg",
+      "id": 6
+    },
+    {
+      "productName": "Ambrane USB Cable ",
+      "productPrice": "89",
+      "productColor": "Black",
+      "productCategory": "USB Cable",
+      "productDescription": "TWS Earbuds with 50H Playtime, Quad Mics ENx™ Tech, Low Latency Mode, 13mm Drivers, ASAP™ Charge, IPX4, IWP™, Touch Controls & BT v5.3(Classic Black)",
+      "productImage": "https://m.media-amazon.com/images/I/61rS2NX1vyL._SX466_.jpg",
+      "id": 7
+    },
+    {
+      "productName": "MI Type B Cable",
+      "productPrice": "179",
+      "productColor": "Black",
+      "productCategory": "Type-B Cable",
+      "productDescription": "Micro USB 120cm fast Charging cable , 480mbps support, Suitable for all Smartphones, tablet and accessories with type B input",
+      "productImage": "https://m.media-amazon.com/images/I/61Mx3gDrY7L._SX466_.jpg",
+      "id": 8
+    },
+    {
+      "productName": "OnePlus Nord CE 3",
+      "productPrice": "26998",
+      "productColor": "Aqua Surge",
+      "productCategory": "Mobile Phone",
+      "productDescription": "5G, OxygenOS, 128 GB Storage ",
+      "productImage": "https://m.media-amazon.com/images/I/41TmlehQnaL._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 9
     }
   ]
 }

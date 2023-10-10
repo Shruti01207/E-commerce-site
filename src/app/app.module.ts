@@ -12,6 +12,7 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import {RouterModule} from '@angular/router';
+import { SearchResultsComponent } from './search-results/search-results.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import {RouterModule} from '@angular/router';
     HomeComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
-    SellerUpdateProductComponent
+    SellerUpdateProductComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,27 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-.product-image{
+.product-image {
     max-width: 248px;
     max-height: 300px;
     object-fit: contain;
-    background-color:red;
-}
-.product-image-container{
 
-    width:250px;
 }
 
-.product-title{
-    margin-top:1em;
-    margin-bottom:0;
+.product-image-container {
+
+    width: 250px;
 }
-.product-data{
+
+.product-title {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.product-data {
     padding: 0 1em;
-    width:60%;
+    width: 60%;
 }
 
-ul{
+ul {
     list-style: none;
-    padding:0 !important;
-    margin:0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 
 }
